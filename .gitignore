@@ -155,7 +155,6 @@ venv.bak/
 
 # End of https://www.gitignore.io/api/django,python,pycharm
 *.png
-*.csv
 
 *.rdb
 
