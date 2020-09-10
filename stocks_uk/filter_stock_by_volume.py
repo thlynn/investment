@@ -54,7 +54,8 @@ def get_stocks_increasing_volume():
             continue
 
         if last.Volume > hist.Volume.sum()*2/days and \
-                hist[:-3].Volume.max() < last.Volume:
+                hist[:-3].Volume.max() < last.Volume and \
+                hist.Volume.sum()/days > 100000:
             print(stock_symbol)
 
 
